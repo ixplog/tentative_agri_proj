@@ -1,0 +1,17 @@
+[tool.kedro]
+package_name = "tentative_agri_proj"
+project_name = "tentative_agri_proj"
+kedro_init_version = "0.18.14"
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+addopts = """
+--cov-report term-missing \
+--cov src/tentative_agri_proj -ra"""
+
+[tool.coverage.report]
+fail_under = 0
+show_missing = true
+exclude_lines = ["pragma: no cover", "raise NotImplementedError"]
