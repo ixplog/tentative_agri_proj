@@ -17,8 +17,9 @@ In order to get the best out of the template:
 
 ## How to install dependencies
 
-Declare any dependencies in `src/environment.yml` for `conda` installation.
-Run the command: `conda env create -f src\environment.yml`
+Declare any dependencies in `src/requirements.txt` for `pip` installation.
+Inside a new `venv` run the command: `pip install -r src/requirements.txt`.
+Make sure you have Python 3.11.
 
 ## How to run your Kedro pipeline
 
