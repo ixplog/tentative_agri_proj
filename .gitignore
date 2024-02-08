@@ -1,3 +1,6 @@
+.venv
+.venv/*
+
 data/01_raw/*
 data/02_intermediate/*
 data/03_primary/*
