@@ -1,5 +1,5 @@
 from kedro.pipeline import Pipeline, node, pipeline
-from .nodes import data_cleaning, split_data, normalise_data, define_model, windowing, train_model, evaluate_model, save_model
+from .nodes import data_cleaning, split_data, normalise_data, define_model, get_windowed_data, train_model, evaluate_model, save_model
 
 
 def create_pipeline(**kwargs) -> Pipeline:
@@ -30,19 +30,19 @@ def create_pipeline(**kwargs) -> Pipeline:
                 name="define_model_node",
             ),
             node(
-                func=windowing,
+                func=get_windowed_data,
                 inputs=["train_logger_3_betula_norm", 10, ["RH.percent", "Tair.C"]],
                 outputs=["X_train", "Y_train"],
                 name="windowing_train_node",
             ),
             node(
-                func=windowing,
+                func=get_windowed_data,
                 inputs=["val_logger_3_betula_norm", 10, ["RH.percent", "Tair.C"]],
                 outputs=["X_val", "Y_val"],
                 name="windowing_val_node",
             ),
             node(
-                func=windowing,
+                func=get_windowed_data,
                 inputs=["test_logger_3_betula_norm", 10, ["RH.percent", "Tair.C"]],
                 outputs=["X_test", "Y_test"],
                 name="windowing_test_node",
