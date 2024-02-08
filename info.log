@@ -1,0 +1,422 @@
+2024-02-08 16:28:31,382 - kedro.framework.session.session - INFO - Kedro project tentative_agri_proj
+2024-02-08 16:28:37,382 - tensorflow - WARNING - From C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2024-02-08 16:28:37,775 - py.warnings - WARNING - C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py:366: UserWarning: An error occurred while importing the 'tentative_agri_proj.pipelines.model_training_eval' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py", line 364, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\model_training_eval\__init__.py", line 1, in <module>
+    from .pipeline import create_pipeline  # NOQA
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\model_training_eval\pipeline.py", line 2, in <module>
+    from .nodes import windowing, train_model, evaluate_model, save_model
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\model_training_eval\nodes.py", line 5, in <module>
+    from ..model_definition import MyTFModel
+ImportError: cannot import name 'MyTFModel' from 'tentative_agri_proj.pipelines.model_definition' (C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\model_definition\__init__.py)
+
+  warnings.warn(
+
+2024-02-08 16:35:27,646 - kedro.framework.session.session - INFO - Kedro project tentative_agri_proj
+2024-02-08 16:35:33,581 - tensorflow - WARNING - From C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2024-02-08 16:35:34,018 - py.warnings - WARNING - C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py:366: UserWarning: An error occurred while importing the 'tentative_agri_proj.pipelines.model_training_eval' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py", line 364, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\model_training_eval\__init__.py", line 1, in <module>
+    from .pipeline import create_pipeline  # NOQA
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\model_training_eval\pipeline.py", line 2, in <module>
+    from .nodes import windowing, train_model, evaluate_model, save_model
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\model_training_eval\nodes.py", line 5, in <module>
+    from ..model_definition import MyTFModel
+ImportError: cannot import name 'MyTFModel' from 'tentative_agri_proj.pipelines.model_definition' (C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\model_definition\__init__.py)
+
+  warnings.warn(
+
+2024-02-08 16:37:26,223 - kedro.framework.session.session - INFO - Kedro project tentative_agri_proj
+2024-02-08 16:37:31,499 - tensorflow - WARNING - From C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2024-02-08 16:37:31,855 - py.warnings - WARNING - C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py:366: UserWarning: An error occurred while importing the 'tentative_agri_proj.pipelines.model_training_eval' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py", line 364, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\model_training_eval\__init__.py", line 1, in <module>
+    from .pipeline import create_pipeline  # NOQA
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\model_training_eval\pipeline.py", line 2, in <module>
+    from .nodes import windowing, train_model, evaluate_model, save_model
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\model_training_eval\nodes.py", line 5, in <module>
+    from ..model_definition import MyTFModel
+ImportError: cannot import name 'MyTFModel' from 'tentative_agri_proj.pipelines.model_definition' (C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\model_definition\__init__.py)
+
+  warnings.warn(
+
+2024-02-08 16:37:46,696 - kedro.framework.session.session - INFO - Kedro project tentative_agri_proj
+2024-02-08 16:37:51,741 - tensorflow - WARNING - From C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2024-02-08 16:37:52,110 - py.warnings - WARNING - C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py:366: UserWarning: An error occurred while importing the 'tentative_agri_proj.pipelines.model_training_eval' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py", line 364, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\model_training_eval\__init__.py", line 1, in <module>
+    from .pipeline import create_pipeline  # NOQA
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\model_training_eval\pipeline.py", line 2, in <module>
+    from .nodes import windowing, train_model, evaluate_model, save_model
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\model_training_eval\nodes.py", line 5, in <module>
+    from ..model_definition import MyTFModel
+ImportError: cannot import name 'MyTFModel' from 'tentative_agri_proj.pipelines.model_definition' (C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\model_definition\__init__.py)
+
+  warnings.warn(
+
+2024-02-08 16:37:52,222 - kedro.io.data_catalog - INFO - Loading data from 'logger_3_betula' (CSVDataSet)...
+2024-02-08 16:37:52,449 - kedro.pipeline.node - INFO - Running node: data_cleaning_node: data_cleaning([logger_3_betula]) -> [logger_3_betula_cleaned]
+2024-02-08 16:37:52,582 - kedro.pipeline.node - ERROR - Node 'data_cleaning_node: data_cleaning([logger_3_betula]) -> [logger_3_betula_cleaned]' failed with error: 
+Failed to save outputs of node data_cleaning_node: data_cleaning([logger_3_betula]) -> [logger_3_betula_cleaned].
+The node definition contains a list of outputs ['logger_3_betula_cleaned'], whereas the node function returned a 'DataFrame'.
+2024-02-08 16:37:52,607 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2024-02-08 16:38:44,268 - kedro.framework.session.session - INFO - Kedro project tentative_agri_proj
+2024-02-08 16:38:49,525 - tensorflow - WARNING - From C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2024-02-08 16:38:49,878 - py.warnings - WARNING - C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py:366: UserWarning: An error occurred while importing the 'tentative_agri_proj.pipelines.model_training_eval' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py", line 364, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\model_training_eval\__init__.py", line 1, in <module>
+    from .pipeline import create_pipeline  # NOQA
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\model_training_eval\pipeline.py", line 2, in <module>
+    from .nodes import windowing, train_model, evaluate_model, save_model
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\model_training_eval\nodes.py", line 5, in <module>
+    from ..model_definition import MyTFModel
+ImportError: cannot import name 'MyTFModel' from 'tentative_agri_proj.pipelines.model_definition' (C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\model_definition\__init__.py)
+
+  warnings.warn(
+
+2024-02-08 16:38:49,980 - kedro.io.data_catalog - INFO - Loading data from 'logger_3_betula' (CSVDataSet)...
+2024-02-08 16:38:50,141 - kedro.pipeline.node - INFO - Running node: data_cleaning_node: data_cleaning([logger_3_betula]) -> [logger_3_betula_cleaned]
+2024-02-08 16:38:50,260 - kedro.io.data_catalog - INFO - Saving data to 'logger_3_betula_cleaned' (MemoryDataset)...
+2024-02-08 16:38:50,278 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2024-02-08 16:38:50,278 - kedro.pipeline.node - INFO - Running node: define_model_node: define_model(None) -> [model]
+2024-02-08 16:38:50,636 - tensorflow - WARNING - From C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\keras\src\utils\tf_utils.py:585: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-02-08 16:38:50,786 - kedro.pipeline.node - ERROR - Node 'define_model_node: define_model(None) -> [model]' failed with error: 
+Failed to save outputs of node define_model_node: define_model(None) -> [model].
+The node definition contains a list of outputs ['model'], whereas the node function returned a 'MyTFModel'.
+2024-02-08 16:38:50,786 - kedro.runner.sequential_runner - WARNING - There are 3 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "data_cleaning_node"
+2024-02-08 16:39:18,442 - kedro.framework.session.session - INFO - Kedro project tentative_agri_proj
+2024-02-08 16:39:23,613 - tensorflow - WARNING - From C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2024-02-08 16:39:24,000 - py.warnings - WARNING - C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py:366: UserWarning: An error occurred while importing the 'tentative_agri_proj.pipelines.model_training_eval' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py", line 364, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\model_training_eval\__init__.py", line 1, in <module>
+    from .pipeline import create_pipeline  # NOQA
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\model_training_eval\pipeline.py", line 2, in <module>
+    from .nodes import windowing, train_model, evaluate_model, save_model
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\model_training_eval\nodes.py", line 5, in <module>
+    from ..model_definition import MyTFModel
+ImportError: cannot import name 'MyTFModel' from 'tentative_agri_proj.pipelines.model_definition' (C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\model_definition\__init__.py)
+
+  warnings.warn(
+
+2024-02-08 16:39:24,097 - kedro.io.data_catalog - INFO - Loading data from 'logger_3_betula' (CSVDataSet)...
+2024-02-08 16:39:24,261 - kedro.pipeline.node - INFO - Running node: data_cleaning_node: data_cleaning([logger_3_betula]) -> [logger_3_betula_cleaned]
+2024-02-08 16:39:24,395 - kedro.io.data_catalog - INFO - Saving data to 'logger_3_betula_cleaned' (MemoryDataset)...
+2024-02-08 16:39:24,413 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2024-02-08 16:39:24,413 - kedro.pipeline.node - INFO - Running node: define_model_node: define_model(None) -> [model]
+2024-02-08 16:39:24,595 - tensorflow - WARNING - From C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\keras\src\utils\tf_utils.py:585: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-02-08 16:39:24,729 - kedro.io.data_catalog - INFO - Saving data to 'model' (MemoryDataset)...
+2024-02-08 16:39:24,744 - kedro.runner.sequential_runner - WARNING - There are 3 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "data_cleaning_node"
+2024-02-08 16:44:10,874 - kedro.framework.session.session - INFO - Kedro project tentative_agri_proj
+2024-02-08 16:44:16,561 - tensorflow - WARNING - From C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2024-02-08 16:44:17,000 - py.warnings - WARNING - C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py:366: UserWarning: An error occurred while importing the 'tentative_agri_proj.pipelines.agri_pipeline' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py", line 364, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\agri_pipeline\__init__.py", line 1, in <module>
+    from .pipeline import create_pipeline  # NOQA
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\agri_pipeline\pipeline.py", line 2, in <module>
+    from .nodes import data_cleaning, split_data, normalise_data, define_model, windowing, train_model, evaluate_model, save_model
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\agri_pipeline\nodes.py", line 90, in <module>
+    from ..model_definition import MyTFModel
+ModuleNotFoundError: No module named 'tentative_agri_proj.pipelines.model_definition'
+
+  warnings.warn(
+
+2024-02-08 16:45:01,267 - kedro.framework.session.session - INFO - Kedro project tentative_agri_proj
+2024-02-08 16:45:06,688 - tensorflow - WARNING - From C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2024-02-08 16:45:07,056 - py.warnings - WARNING - C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py:366: UserWarning: An error occurred while importing the 'tentative_agri_proj.pipelines.agri_pipeline' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py", line 364, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\agri_pipeline\__init__.py", line 1, in <module>
+    from .pipeline import create_pipeline  # NOQA
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\agri_pipeline\pipeline.py", line 2, in <module>
+    from .nodes import data_cleaning, split_data, normalise_data, define_model, windowing, train_model, evaluate_model, save_model
+ImportError: cannot import name 'windowing' from 'tentative_agri_proj.pipelines.agri_pipeline.nodes' (C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\agri_pipeline\nodes.py)
+
+  warnings.warn(
+
+2024-02-08 16:46:15,144 - kedro.framework.session.session - INFO - Kedro project tentative_agri_proj
+2024-02-08 16:46:20,849 - tensorflow - WARNING - From C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2024-02-08 16:46:21,189 - py.warnings - WARNING - C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py:366: UserWarning: An error occurred while importing the 'tentative_agri_proj.pipelines.agri_pipeline' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py", line 364, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\agri_pipeline\__init__.py", line 1, in <module>
+    from .pipeline import create_pipeline  # NOQA
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\agri_pipeline\pipeline.py", line 2, in <module>
+    from .nodes import data_cleaning, split_data, normalise_data, define_model, windowing, train_model, evaluate_model, save_model
+ImportError: cannot import name 'windowing' from 'tentative_agri_proj.pipelines.agri_pipeline.nodes' (C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\agri_pipeline\nodes.py)
+
+  warnings.warn(
+
+2024-02-08 16:47:11,706 - kedro.framework.session.session - INFO - Kedro project tentative_agri_proj
+2024-02-08 16:47:18,370 - tensorflow - WARNING - From C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2024-02-08 16:47:18,837 - py.warnings - WARNING - C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py:366: UserWarning: An error occurred while importing the 'tentative_agri_proj.pipelines.agri_pipeline' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py", line 364, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\agri_pipeline\__init__.py", line 1, in <module>
+    from .pipeline import create_pipeline  # NOQA
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\agri_pipeline\pipeline.py", line 2, in <module>
+    from .nodes import data_cleaning, split_data, normalise_data, define_model, windowing, train_model, evaluate_model, save_model
+ImportError: cannot import name 'windowing' from 'tentative_agri_proj.pipelines.agri_pipeline.nodes' (C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\agri_pipeline\nodes.py)
+
+  warnings.warn(
+
+2024-02-08 16:49:50,243 - kedro.framework.session.session - INFO - Kedro project tentative_agri_proj
+2024-02-08 16:49:55,585 - tensorflow - WARNING - From C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2024-02-08 16:49:55,946 - py.warnings - WARNING - C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py:366: UserWarning: An error occurred while importing the 'tentative_agri_proj.pipelines.agri_pipeline' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py", line 364, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\agri_pipeline\__init__.py", line 1, in <module>
+    from .pipeline import create_pipeline  # NOQA
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\agri_pipeline\pipeline.py", line 2, in <module>
+    from .nodes import data_cleaning, split_data, normalise_data, define_model, windowing, train_model, evaluate_model, save_model
+ImportError: cannot import name 'windowing' from 'tentative_agri_proj.pipelines.agri_pipeline.nodes' (C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\agri_pipeline\nodes.py)
+
+  warnings.warn(
+
+2024-02-08 16:52:40,886 - kedro.framework.session.session - INFO - Kedro project tentative_agri_proj
+2024-02-08 16:52:46,056 - tensorflow - WARNING - From C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2024-02-08 16:52:46,417 - py.warnings - WARNING - C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py:366: UserWarning: An error occurred while importing the 'tentative_agri_proj.pipelines.agri_pipeline' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py", line 364, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\agri_pipeline\__init__.py", line 1, in <module>
+    from .pipeline import create_pipeline  # NOQA
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\agri_pipeline\pipeline.py", line 2, in <module>
+    from .nodes import data_cleaning, split_data, normalise_data, define_model, windowing, train_model, evaluate_model, save_model
+ImportError: cannot import name 'windowing' from 'tentative_agri_proj.pipelines.agri_pipeline.nodes' (C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\agri_pipeline\nodes.py)
+
+  warnings.warn(
+
+2024-02-08 16:58:16,348 - kedro.framework.session.session - INFO - Kedro project tentative_agri_proj
+2024-02-08 16:58:21,660 - tensorflow - WARNING - From C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2024-02-08 16:58:22,013 - py.warnings - WARNING - C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py:366: UserWarning: An error occurred while importing the 'tentative_agri_proj.pipelines.main_pipeline' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py", line 364, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\main_pipeline\__init__.py", line 1, in <module>
+    from .pipeline import create_pipeline  # NOQA
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\main_pipeline\pipeline.py", line 2, in <module>
+    from .nodes import data_cleaning, split_data, normalise_data, define_model, windowing, train_model, evaluate_model, save_model
+ImportError: cannot import name 'windowing' from 'tentative_agri_proj.pipelines.main_pipeline.nodes' (C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\main_pipeline\nodes.py)
+
+  warnings.warn(
+
+2024-02-08 17:10:52,601 - kedro.framework.session.session - INFO - Kedro project tentative_agri_proj
+2024-02-08 17:10:57,723 - tensorflow - WARNING - From C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2024-02-08 17:10:58,090 - py.warnings - WARNING - C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py:366: UserWarning: An error occurred while importing the 'tentative_agri_proj.pipelines.main_pipeline' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\.venv\Lib\site-packages\kedro\framework\project\__init__.py", line 364, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\main_pipeline\__init__.py", line 1, in <module>
+    from .pipeline import create_pipeline  # NOQA
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\main_pipeline\pipeline.py", line 2, in <module>
+    from .nodes import data_cleaning, split_data, normalise_data, define_model, windowing, train_model, evaluate_model, save_model
+ImportError: cannot import name 'windowing' from 'tentative_agri_proj.pipelines.main_pipeline.nodes' (C:\Users\paolo\Documents\GitHub\tentative_agri_proj\src\tentative_agri_proj\pipelines\main_pipeline\nodes.py)
+
+  warnings.warn(
+

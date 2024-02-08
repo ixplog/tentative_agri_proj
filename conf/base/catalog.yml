@@ -2,3 +2,23 @@
 #
 # Documentation for this file format can be found in "The Data Catalog"
 # Link: https://docs.kedro.org/en/stable/data/data_catalog.html
+
+logger_1_sedge:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/data/TVC_logger_1_sedge.csv
+
+logger_2_riparian:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/data/TVC_logger_2_riparian.csv
+
+logger_3_betula:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/data/TVC_logger_3_betula.csv
+
+logger_4_alder:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/data/TVC_logger_4_alder.csv
+
+logger_5_lichen_heat:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/data/TVC_logger_5_lichen_heat.csv
