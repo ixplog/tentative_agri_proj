@@ -1,58 +1,81 @@
 import numpy as np
+import pandas as pd
 import yaml
 
 import tensorflow as tf
 from tensorflow.keras.layers import Dense, LSTM
 from tensorflow.keras.callbacks import History
 
-# Paramaters read
+import logging
+logger = logging.getLogger(__name__)
+
+
+### Paramaters read
+
+model_name = "TF_LSTM_3xDense"
 
 with open('conf/base/parameters.yml') as params:
     config = yaml.safe_load(params)
+    label_cols = config["label_cols"]
 
-    untrained_tf_lstm_model = config["untrained_tf_lstm_model"]
-    trained_tf_lstm_model = config["trained_tf_lstm_model"]
+    input_shape = (None, config["models"][model_name]["window_size"], config["num_features"])
 
-    num_epochs = config["num_epochs_training"]
+    untrained_tf_lstm_model = config["models"][model_name]["untrained_tf_lstm_model"]
+    trained_tf_lstm_model = config["models"][model_name]["trained_tf_lstm_model"]
 
-# Pipeline nodes
+    num_epochs = config["models"][model_name]["num_epochs_training"]
+    window_size = config["models"][model_name]["window_size"]
+    LSTM_units = config["models"][model_name]["LSTM_units"]
+    Dense1_units = config["models"][model_name]["Dense1_units"]
+    Dense2_units = config["models"][model_name]["Dense2_units"]
+    Dense3_units = config["models"][model_name]["Dense3_units"]
 
-# class MyTFModel(Model):
-#     def __init__(self):
-#         super().__init__()
-#         self.lstm = LSTM(units=100)
-#         self.dense1 = Dense(128, activation='relu')
-#         self.dense2 = Dense(10)
-#         self.dense3 = Dense(2)
+
+### Pipeline nodes
     
-#     def call(self, x):
-#         x = self.lstm(x)
-#         x = self.dense1(x)
-#         x = self.dense2(x)
-#         return self.dense3(x)
+def get_windowed_data(df: pd.DataFrame) -> (np.array, np.array):
+    """Prepares the data for input to an LSTM model
 
+    Args:
+        df: cleaned and normalised data.
+    Returns:
+        X, Y pair of windowed data
+    """
+    label_to_index = {name: i for i, name in enumerate(df.columns)}
+    label_cols_indices = []
+    if isinstance(label_cols, list):
+        for col in label_cols:
+            label_cols_indices.append(label_to_index[col])
+    else:
+        label_cols_indices.append(label_to_index[label_cols])
+        
+    X = []
+    Y = []
+    for i in range(len(df) - window_size):
+        X.append(df.iloc[i:i+window_size].values)
+        Y.append(df.iloc[i+window_size, label_cols_indices].values)
+
+    return np.array(X), np.array(Y)
 
 def define_model() -> str:
     """Defines a model
 
     Returns:
-        A model description
+        A model description in JSON
     """
     model = tf.keras.Sequential()
-    model.add(LSTM(units=100))
-    model.add(Dense(128, activation='relu'))
-    model.add(Dense(10))
-    model.add(Dense(2))
+    model.add(LSTM(units=LSTM_units))
+    model.add(Dense(Dense1_units, activation='relu'))
+    model.add(Dense(Dense2_units))
+    model.add(Dense(Dense3_units))
 
     loss = tf.losses.MeanSquaredError()
     optimizer = tf.keras.optimizers.Adam()
     metrics = [tf.metrics.MeanAbsoluteError()]
 
-    #model = MyTFModel()
     model.compile(optimizer, loss, metrics=metrics)
 
     # TO BE READ FROM CONFIG
-    input_shape = (None, 10, 5)
     model.build(input_shape)
     model.save(untrained_tf_lstm_model, overwrite=True)
 
@@ -82,21 +105,28 @@ def train_model(X_train: np.array, Y_train: np.array, X_val: np.array, Y_val: np
     return history
 
 
-def evaluate_model(X_test: np.array, Y_test: np.array, history) -> float:
+def evaluate_model(X_test: np.array, Y_test: np.array, history: History) -> float:
     """Evaluates the model
 
     Args:
         X_test: independent test data.
         Y_test: dependent test data.
-        model: model to be evaluated.
+        history: History object for training and validation.
     Returns:
         Scalar test loss.
     """
     model = tf.keras.saving.load_model(trained_tf_lstm_model)
     test_result = model.evaluate(X_test, Y_test)
 
-    # TODO: compare with history
-
-    print(f"Test evaluation: {test_result}")
+    # TODO: these need to be setup according to model
+    logger.info(f"""
+        RESULTS. Overall Results of model training and evaluation for model {model.name}:
+        \tTest evaluation: {test_result}
+        \tTrain loss time series: {history.history["loss"]}
+        \tTrain mean absolute error time series: {history.history["mean_absolute_error"]}
+        \tValidation loss time series: {history.history["val_loss"]}
+        \tValidation mean absolute error time series: {history.history["val_mean_absolute_error"]}
+        \tHistory parameters: {history.params}
+    """)
 
     return test_result

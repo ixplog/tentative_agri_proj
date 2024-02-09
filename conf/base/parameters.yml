@@ -1,11 +1,17 @@
+num_features: 5
+label_cols: ["RH.percent", "Tair.C"]
 train_data_split: 0.7
 val_data_split: 0.9
 
-window_size: 10
-label_cols: ["RH.percent", "Tair.C"]
+models:
+  TF_LSTM_3xDense:
+    untrained_tf_lstm_model: "data/06_models/tensorflow_lstm"
+    trained_tf_lstm_model: "data/06_models/tensorflow_lstm_trained"
 
-untrained_tf_lstm_model: "data/06_models/tensorflow_lstm"
-trained_tf_lstm_model: "data/06_models/tensorflow_lstm_trained"
-
-# model hyperparameters
-num_epochs_training: 10
+    # model hyperparameters
+    LSTM_units: 50
+    Dense1_units: 128
+    Dense2_units: 10
+    Dense3_units: 2
+    num_epochs_training: 10
+    window_size: 10
