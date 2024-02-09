@@ -1,5 +1,5 @@
 from kedro.pipeline import Pipeline, node, pipeline
-from .nodes import data_cleaning, split_data, normalise_data, define_model, get_windowed_data, train_model, evaluate_model, save_model
+from .nodes import data_cleaning, split_data, normalise_data, define_model, get_windowed_data, train_model, evaluate_model
 
 
 def create_pipeline(**kwargs) -> Pipeline:
@@ -31,39 +31,33 @@ def create_pipeline(**kwargs) -> Pipeline:
             ),
             node(
                 func=get_windowed_data,
-                inputs=["train_logger_3_betula_norm", 10, ["RH.percent", "Tair.C"]],
+                inputs=["train_logger_3_betula_norm"],
                 outputs=["X_train", "Y_train"],
                 name="windowing_train_node",
             ),
             node(
                 func=get_windowed_data,
-                inputs=["val_logger_3_betula_norm", 10, ["RH.percent", "Tair.C"]],
+                inputs=["val_logger_3_betula_norm"],
                 outputs=["X_val", "Y_val"],
                 name="windowing_val_node",
             ),
             node(
                 func=get_windowed_data,
-                inputs=["test_logger_3_betula_norm", 10, ["RH.percent", "Tair.C"]],
+                inputs=["test_logger_3_betula_norm"],
                 outputs=["X_test", "Y_test"],
                 name="windowing_test_node",
             ),
             node(
                 func=train_model,
                 inputs=["X_train", "Y_train", "X_val", "Y_val", "model"],
-                outputs=["trained_model", "history"],
+                outputs="history",
                 name="training_node",
             ),
             node(
                 func=evaluate_model,
-                inputs=["X_test", "Y_test", "trained_model"],
-                outputs=["evaluation"],
+                inputs=["X_test", "Y_test", "history"],
+                outputs="evaluation",
                 name="eval_node",
-            ),
-            node(
-                func=save_model,
-                inputs=["trained_model", "tf_lstm_model"],
-                outputs=[],
-                name="save_model_node",
             ),
         ]
     )
