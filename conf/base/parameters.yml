@@ -9,9 +9,10 @@ models:
     trained_tf_lstm_model: "data/06_models/tensorflow_lstm_trained"
 
     # model hyperparameters
-    LSTM_units: 50
-    Dense1_units: 128
+    LSTM_units: 25
+    Dense1_units: 64
     Dense2_units: 10
     Dense3_units: 2
-    num_epochs_training: 10
+    
+    num_epochs_training: 8
     window_size: 10

@@ -121,11 +121,15 @@ def evaluate_model(X_test: np.array, Y_test: np.array, history: History) -> floa
     # TODO: these need to be setup according to model
     logger.info(f"""
         RESULTS. Overall Results of model training and evaluation for model {model.name}:
-        \tTest evaluation: {test_result}
-        \tTrain loss time series: {history.history["loss"]}
-        \tTrain mean absolute error time series: {history.history["mean_absolute_error"]}
-        \tValidation loss time series: {history.history["val_loss"]}
-        \tValidation mean absolute error time series: {history.history["val_mean_absolute_error"]}
+
+        \tTrain loss: {history.history["loss"][-1]}
+        \tValidation loss: {history.history["val_loss"][-1]}
+        \tTest loss: {test_result[0]}
+
+        \tTrain mean absolute error: {history.history["mean_absolute_error"][-1]}
+        \tValidation mean absolute error: {history.history["val_mean_absolute_error"][-1]}
+        \tTest mean absolute error: {test_result[1]}
+
         \tHistory parameters: {history.params}
     """)
 
