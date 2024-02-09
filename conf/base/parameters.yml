@@ -1,0 +1,11 @@
+train_data_split: 0.7
+val_data_split: 0.9
+
+window_size: 10
+label_cols: ["RH.percent", "Tair.C"]
+
+untrained_tf_lstm_model: "data/06_models/tensorflow_lstm"
+trained_tf_lstm_model: "data/06_models/tensorflow_lstm_trained"
+
+# model hyperparameters
+num_epochs_training: 10

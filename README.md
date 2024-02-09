@@ -17,8 +17,8 @@ In order to get the best out of the template:
 
 ## How to install dependencies
 
-Declare any dependencies in `requirements.txt` for `pip` installation.
-Inside a new `venv` run the command: `pip install -r requirements.txt`.
+Declare any dependencies in `src/requirements.txt` for `pip` installation.
+Inside a new `venv` run the command: `pip install -r src/requirements.txt`.
 Make sure you have Python 3.11.
 
 ## How to run your Kedro pipeline
@@ -27,6 +27,10 @@ You can run your Kedro project with:
 
 ```
 kedro run
+```
+You can run a visualisation of the project running
+```
+kedro viz run
 ```
 
 ## How to test your Kedro project
